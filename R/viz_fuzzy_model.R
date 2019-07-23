@@ -8,7 +8,6 @@
 #' @param edge_sig_threshold Numeric Value between 0 and 1 which specifies threshold to filter edges. Edges having local importance less than this threshold will be removed from the process model.
 #' @param edge_sig_to_corr_ratio Numeric Value between 0  and 1 which specifies the weights for edge significance metrics and edge correlation metrics. Higher the value, more importance is given to the significance metrics.
 #' @param preserve_threshold Numeric Value between 0 and 1 which is used for removing the conflicting edges.
-#' @param preserve_threshold Numeric Value between 0 and 1 which is used for removing the conflicting edges.
 #' @param offset_threshold Numeric Value between 0 and 1 which is used to remove less significant edge in case of conflicting edges or to determine concurrency
 #' @param node_sig_weights Numeric Vector of length 2. Each value is between 0 and
 #' 1 determining the weights given to frequency metric and routing metric respectively.
@@ -109,7 +108,10 @@
 #'                        activity_id = "event",
 #'                        timestamp = "completeTime")
 #' metrics <- mine_fuzzy_model(log)
-#' viz_fuzzy_model(metrics = metrics,node_sig_threshold = 0, edge_sig_threshold = 0.3,edge_sig_to_corr_ratio = 0.75)
+#' viz_fuzzy_model(metrics = metrics,
+#'     node_sig_threshold = 0,
+#'     edge_sig_threshold = 0.3,
+#'     edge_sig_to_corr_ratio = 0.75)
 #' }
 #'
 #' @import DiagrammeR

@@ -8,14 +8,19 @@ Description: fuzzymineR package is usefull when a user want to mine process
     models from event data. It contains functions by which a user has to only
     provide a CSV file and by applying a series of functions one can mine process
     models.
-Depends: 
+Depends: R (>= 3.1.0)
+Imports:
     readr,
     dplyr,
     bupaR,
     stringr,
     xesreadR,
-    DiagrammeR
+    DiagrammeR,
+    edeaR,
+    processmapR,
+    processmonitR,
+    petrinetR
 License: GPL
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.1
+RoxygenNote: 5.0.1

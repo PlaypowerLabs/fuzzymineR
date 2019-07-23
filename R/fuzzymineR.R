@@ -42,9 +42,6 @@
 #'
 #'}
 #'
-#'
-#'
-#'@docType fuzzymineR
 #'@name fuzzymineR
 #'
 NULL

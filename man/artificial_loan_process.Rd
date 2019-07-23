@@ -18,3 +18,4 @@ An event dataset consisting the information for a loan process which consists of
 several cases who performs different sequence of activites at different times
 }
 \keyword{datasets}
+

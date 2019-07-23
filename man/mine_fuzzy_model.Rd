@@ -88,3 +88,4 @@ Based on Multi-Perspective Metrics}
 \seealso{
 \link[fuzzymineR]{create_eventlog}, \link[fuzzymineR]{viz_fuzzy_model}
 }
+

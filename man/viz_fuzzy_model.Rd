@@ -4,12 +4,11 @@
 \alias{viz_fuzzy_model}
 \title{Visualize Process Model}
 \usage{
-viz_fuzzy_model(metrics, node_sig_threshold = 0,
-  edge_sig_threshold = 0.4, edge_sig_to_corr_ratio = 0.75,
-  preserve_threshold = 0.4, offset_threshold = 0.1,
-  node_sig_weights = c(freq = 1, routing = 1), sig_weights = c(freq =
-  1, dist = 1), corr_weights = c(prox = 1, end_point = 1, originator = 1,
-  data_type = 1, data_value = 1))
+viz_fuzzy_model(metrics, node_sig_threshold = 0, edge_sig_threshold = 0.4,
+  edge_sig_to_corr_ratio = 0.75, preserve_threshold = 0.4,
+  offset_threshold = 0.1, node_sig_weights = c(freq = 1, routing = 1),
+  sig_weights = c(freq = 1, dist = 1), corr_weights = c(prox = 1, end_point
+  = 1, originator = 1, data_type = 1, data_value = 1))
 }
 \arguments{
 \item{metrics}{A list of metrics created by mine_fuzzy_model}
@@ -32,8 +31,6 @@ determinesthe weights of freqency binary metric and distance metric respectively
 
 \item{corr_weights}{Numeric vector of length 5. Each value between 0 and 1. It represents
 weights of proximity, endpoint, originator, data type and data value correlation respectively.}
-
-\item{preserve_threshold}{Numeric Value between 0 and 1 which is used for removing the conflicting edges.}
 }
 \description{
 Takes a metrics mined by mine_fuzzy_model function and a number of other configurable parameters, creates a process model for it.
@@ -118,7 +115,6 @@ In this step, we mark the nodes whose \strong{aggregate node significance} is
 if possible and remove the isolated nodes from the process model. We preserve
 the ordering relation of the node that is removed by transitivity.
 }
-
 \examples{
 \dontrun{
 #' library(fuzzymineR)
@@ -128,10 +124,14 @@ log <- create_eventlog(artificial_loan_process,
                        activity_id = "event",
                        timestamp = "completeTime")
 metrics <- mine_fuzzy_model(log)
-viz_fuzzy_model(metrics = metrics,node_sig_threshold = 0, edge_sig_threshold = 0.3,edge_sig_to_corr_ratio = 0.75)
+viz_fuzzy_model(metrics = metrics,
+    node_sig_threshold = 0,
+    edge_sig_threshold = 0.3,
+    edge_sig_to_corr_ratio = 0.75)
 }
 
 }
 \seealso{
 \link[fuzzymineR]{create_eventlog}, \link[fuzzymineR]{mine_fuzzy_model}
 }
+

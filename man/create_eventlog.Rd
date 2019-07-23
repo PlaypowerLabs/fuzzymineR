@@ -50,3 +50,4 @@ log <- create_eventlog(artificial_loan_process,
 \seealso{
 \link[bupaR]{eventlog}, \link[fuzzymineR]{mine_fuzzy_model}, \link[fuzzymineR]{viz_fuzzy_model}
 }
+
