@@ -69,7 +69,7 @@
 #' If both rel(A,B) and rel(B,A) is \strong{more} than \strong{preserve threshold} than
 #' these edges form a \strong{length-2 loop}.
 #'
-#' \deqn{rel(A,B)  \ge preserve_threshold  && rel(B,A) \ge preserve_threshold => length-2 loop }
+#' \deqn{rel(A,B) \ge preserve_threshold \& rel(B,A) \ge preserve_threshold => length-2 loop }
 #'
 #' \emph{Case 2 :}
 #' If one of the edges have relative significance \strong{less} than the \strong{preserve threshold}
