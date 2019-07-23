@@ -1,0 +1,198 @@
+System.out.println("Loading log");
+log = open_xes_log_file("__FNAME__");
+
+System.out.println("Mining model");
+Metrics_Repository = mine_fuzzy_model(log);
+System.out.println("Model mined Successfully");
+
+System.out.println("Creating Mutable Fuzzy Graph Object");
+org.processmining.models.graphbased.directed.fuzzymodel.MutableFuzzyGraph MFG = new org.processmining.models.graphbased.directed.fuzzymodel.MutableFuzzyGraph(Metrics_Repository);
+System.out.println("Object created successfully");
+
+//Mapping of index to names  ------>
+
+System.out.println("Writing names of nodes to a file");
+FileWriter writer = new FileWriter("__OUTNAMES__");
+n = Metrics_Repository.getNumberOfLogEvents();
+for(i=0;i<n;i++)
+{
+node = MFG.getPrimitiveNode(i);
+writer.write(node.getElementName());
+writer.write("\r\n");
+}
+writer.close();
+
+System.out.println("Write Successfull");
+
+
+// Uniary Metrics Write ----->
+
+List_UM = Metrics_Repository.getUnaryMetrics();
+
+System.out.println("Writing UM1");
+Obj_UM = List_UM.get(0);
+FileWriter writer = new FileWriter("__UMOUT1__");
+n = Obj_UM.size();
+for(i=0;i<n;i++)
+{
+s = Double.toString(Obj_UM.getMeasure(i));
+writer.write(s);
+writer.write("\r\n");
+}
+writer.close();
+System.out.println("Write Successfull");
+
+
+System.out.println("Writing UM2");
+Obj_UM = List_UM.get(1);
+FileWriter writer = new FileWriter("__UMOUT2__");
+n = Obj_UM.size();
+for(i=0;i<n;i++)
+{
+s = Double.toString(Obj_UM.getMeasure(i));
+writer.write(s);
+writer.write("\r\n");
+}
+writer.close();
+System.out.println("Write Successfull");
+
+
+// Binary Metrics Write -------->
+
+List_BLM = Metrics_Repository.getBinaryLogMetrics();
+
+System.out.println("Writing BM1");
+Obj_BLM = List_BLM.get(0);
+n = Obj_BLM.size();
+FileWriter writer = new FileWriter("__BMOUT1__");
+for(i=0;i<n;i++)
+{
+for(j=0;j<n;j++)
+{
+s = Double.toString(Obj_BLM.getMeasure(i,j));
+writer.write(s);
+if(j<n-1)
+writer.write(",");
+}
+writer.write("\r\n");
+}
+writer.close();
+System.out.println("Write Successfull");
+
+
+System.out.println("Writing BM2");
+Obj_BLM = List_BLM.get(1);
+n = Obj_BLM.size();
+FileWriter writer = new FileWriter("__BMOUT2__");
+for(i=0;i<n;i++)
+{
+for(j=0;j<n;j++)
+{
+s = Double.toString(Obj_BLM.getMeasure(i,j));
+writer.write(s);
+if(j<n-1)
+writer.write(",");
+}
+writer.write("\r\n");
+}
+writer.close();
+System.out.println("Write Successfull");
+
+
+
+System.out.println("Writing BM3");
+Obj_BLM = List_BLM.get(2);
+n = Obj_BLM.size();
+FileWriter writer = new FileWriter("__BMOUT3__");
+for(i=0;i<n;i++)
+{
+for(j=0;j<n;j++)
+{
+s = Double.toString(Obj_BLM.getMeasure(i,j));
+writer.write(s);
+if(j<n-1)
+writer.write(",");
+}
+writer.write("\r\n");
+}
+writer.close();
+System.out.println("Write Successfull");
+
+
+System.out.println("Writing BM4");
+Obj_BLM = List_BLM.get(3);
+n = Obj_BLM.size();
+FileWriter writer = new FileWriter("__BMOUT4__");
+for(i=0;i<n;i++)
+{
+for(j=0;j<n;j++)
+{
+s = Double.toString(Obj_BLM.getMeasure(i,j));
+writer.write(s);
+if(j<n-1)
+writer.write(",");
+}
+writer.write("\r\n");
+}
+writer.close();
+System.out.println("Write Successfull");
+
+
+System.out.println("Writing BM5");
+Obj_BLM = List_BLM.get(4);
+n = Obj_BLM.size();
+FileWriter writer = new FileWriter("__BMOUT5__");
+for(i=0;i<n;i++)
+{
+for(j=0;j<n;j++)
+{
+s = Double.toString(Obj_BLM.getMeasure(i,j));
+writer.write(s);
+if(j<n-1)
+writer.write(",");
+}
+writer.write("\r\n");
+}
+writer.close();
+System.out.println("Write Successfull");
+
+
+System.out.println("Writing BM6");
+Obj_BLM = List_BLM.get(5);
+n = Obj_BLM.size();
+FileWriter writer = new FileWriter("__BMOUT6__");
+for(i=0;i<n;i++)
+{
+for(j=0;j<n;j++)
+{
+s = Double.toString(Obj_BLM.getMeasure(i,j));
+writer.write(s);
+if(j<n-1)
+writer.write(",");
+}
+writer.write("\r\n");
+}
+writer.close();
+System.out.println("Write Successfull");
+
+
+System.out.println("Writing BM7");
+List_BDM = Metrics_Repository.getBinaryDerivateMetrics();
+Obj_BDM = List_BDM.get(0);
+n = Obj_BDM.size();
+FileWriter writer = new FileWriter("__BMOUT7__");
+for(i=0;i<n;i++)
+{
+for(j=0;j<n;j++)
+{
+s = Double.toString(Obj_BDM.getMeasure(i,j));
+writer.write(s);
+if(j<n-1)
+writer.write(",");
+}
+writer.write("\r\n");
+}
+writer.close();
+System.out.println("Write Successfull");
+
+exit();

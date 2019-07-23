@@ -1,0 +1,21 @@
+Package: fuzzymineR
+Type: Package
+Title: Build Process Model from Event Data
+Version: 0.1.0
+Author: Tirth Shah, Nirmal Patel
+Maintainer: Tirth Shah <tirthshah1711@gmail.com>
+Description: fuzzymineR package is usefull when a user want to mine process
+    models from event data. It contains functions by which a user has to only
+    provide a CSV file and by applying a series of functions one can mine process
+    models.
+Depends: 
+    readr,
+    dplyr,
+    bupaR,
+    stringr,
+    xesreadR,
+    DiagrammeR
+License: GPL
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1

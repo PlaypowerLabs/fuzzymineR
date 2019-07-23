@@ -1,0 +1,591 @@
+case,event,completeTime
+trace 0,register application,2013-04-16 10:08:02
+trace 0,check credit,2013-04-16 10:16:03
+trace 0,calculate capacity,2013-04-16 10:16:28
+trace 0,check system,2013-04-16 10:20:25
+trace 0,accept,2013-04-16 10:21:30
+trace 0,send decision e-mail,2013-04-16 10:26:53
+trace 1,register application,2013-04-16 10:10:02
+trace 1,check credit,2013-04-16 10:16:07
+trace 1,calculate capacity,2013-04-16 10:16:21
+trace 1,check system,2013-04-16 10:20:11
+trace 1,accept,2013-04-16 10:24:16
+trace 1,send decision e-mail,2013-04-16 10:29:58
+trace 2,register application,2013-04-16 10:15:42
+trace 2,check credit,2013-04-16 10:22:41
+trace 2,calculate capacity,2013-04-16 10:23:37
+trace 2,check system,2013-04-16 10:29:18
+trace 2,accept,2013-04-16 10:37:54
+trace 2,send decision e-mail,2013-04-16 10:44:03
+trace 3,register application,2013-04-16 10:19:56
+trace 3,check credit,2013-04-16 10:23:07
+trace 3,calculate capacity,2013-04-16 10:28:41
+trace 3,check system,2013-04-16 10:33:33
+trace 3,accept,2013-04-16 10:42:51
+trace 3,send decision e-mail,2013-04-16 10:50:47
+trace 4,register application,2013-04-16 10:28:43
+trace 4,check credit,2013-04-16 10:32:08
+trace 4,calculate capacity,2013-04-16 10:37:11
+trace 4,check system,2013-04-16 10:40:47
+trace 4,accept,2013-04-16 10:45:33
+trace 4,send decision e-mail,2013-04-16 10:48:13
+trace 5,register application,2013-04-16 10:33:28
+trace 5,check credit,2013-04-16 10:36:29
+trace 5,calculate capacity,2013-04-16 10:38:52
+trace 5,check system,2013-04-16 10:43:58
+trace 5,accept,2013-04-16 10:44:26
+trace 5,send decision e-mail,2013-04-16 10:45:09
+trace 6,register application,2013-04-16 10:35:07
+trace 6,check credit,2013-04-16 10:42:11
+trace 6,calculate capacity,2013-04-16 10:42:47
+trace 6,check system,2013-04-16 10:51:33
+trace 6,reject,2013-04-16 10:54:35
+trace 6,send decision e-mail,2013-04-16 11:04:09
+trace 7,register application,2013-04-16 10:38:26
+trace 7,check credit,2013-04-16 10:40:57
+trace 7,calculate capacity,2013-04-16 10:42:55
+trace 7,check system,2013-04-16 10:46:33
+trace 7,reject,2013-04-16 10:51:09
+trace 7,send decision e-mail,2013-04-16 10:58:05
+trace 8,register application,2013-04-16 10:47:23
+trace 8,check credit,2013-04-16 10:51:26
+trace 8,calculate capacity,2013-04-16 10:52:54
+trace 8,check system,2013-04-16 10:56:32
+trace 8,reject,2013-04-16 11:01:18
+trace 8,send decision e-mail,2013-04-16 11:03:49
+trace 9,register application,2013-04-16 10:47:29
+trace 9,check credit,2013-04-16 10:53:18
+trace 9,calculate capacity,2013-04-16 11:03:15
+trace 9,check system,2013-04-16 11:11:27
+trace 9,reject,2013-04-16 11:17:52
+trace 9,send decision e-mail,2013-04-16 11:23:19
+trace 10,register application,2013-04-16 10:49:32
+trace 10,check credit,2013-04-16 10:53:10
+trace 10,calculate capacity,2013-04-16 10:55:23
+trace 10,check system,2013-04-16 10:58:20
+trace 10,reject,2013-04-16 11:06:03
+trace 10,send decision e-mail,2013-04-16 11:08:13
+trace 11,register application,2013-04-16 10:51:06
+trace 11,check credit,2013-04-16 11:00:32
+trace 11,calculate capacity,2013-04-16 11:05:20
+trace 11,check system,2013-04-16 11:11:06
+trace 11,reject,2013-04-16 11:19:57
+trace 11,send decision e-mail,2013-04-16 11:24:15
+trace 12,register application,2013-04-16 10:54:25
+trace 12,check credit,2013-04-16 10:59:27
+trace 12,calculate capacity,2013-04-16 11:07:56
+trace 12,check system,2013-04-16 11:12:10
+trace 12,reject,2013-04-16 11:17:28
+trace 12,send decision e-mail,2013-04-16 11:20:12
+trace 13,register application,2013-04-16 11:02:14
+trace 13,check credit,2013-04-16 11:07:17
+trace 13,calculate capacity,2013-04-16 11:14:51
+trace 13,check system,2013-04-16 11:16:18
+trace 13,reject,2013-04-16 11:20:27
+trace 13,send decision e-mail,2013-04-16 11:22:36
+trace 14,register application,2013-04-16 11:05:27
+trace 14,check credit,2013-04-16 11:05:37
+trace 14,calculate capacity,2013-04-16 11:09:40
+trace 14,check system,2013-04-16 11:14:09
+trace 14,reject,2013-04-16 11:18:07
+trace 14,send decision e-mail,2013-04-16 11:20:09
+trace 15,register application,2013-04-16 11:09:37
+trace 15,check credit,2013-04-16 11:13:57
+trace 15,calculate capacity,2013-04-16 11:16:26
+trace 15,check system,2013-04-16 11:17:25
+trace 15,reject,2013-04-16 11:26:04
+trace 15,send decision e-mail,2013-04-16 11:33:38
+trace 16,register application,2013-04-16 11:17:31
+trace 16,check credit,2013-04-16 11:23:38
+trace 16,calculate capacity,2013-04-16 11:28:35
+trace 16,check system,2013-04-16 11:32:02
+trace 16,reject,2013-04-16 11:37:04
+trace 16,send decision e-mail,2013-04-16 11:46:13
+trace 17,register application,2013-04-16 11:19:13
+trace 17,check credit,2013-04-16 11:22:53
+trace 17,calculate capacity,2013-04-16 11:29:56
+trace 17,check system,2013-04-16 11:33:19
+trace 17,reject,2013-04-16 11:42:31
+trace 17,send decision e-mail,2013-04-16 11:52:01
+trace 18,register application,2013-04-16 11:25:30
+trace 18,check credit,2013-04-16 11:35:01
+trace 18,calculate capacity,2013-04-16 11:40:09
+trace 18,check system,2013-04-16 11:42:32
+trace 18,reject,2013-04-16 11:46:24
+trace 18,send decision e-mail,2013-04-16 11:48:49
+trace 19,register application,2013-04-16 11:34:06
+trace 19,check credit,2013-04-16 11:34:46
+trace 19,calculate capacity,2013-04-16 11:39:13
+trace 19,check system,2013-04-16 11:46:39
+trace 19,reject,2013-04-16 11:55:03
+trace 19,send decision e-mail,2013-04-16 12:04:10
+trace 20,register application,2013-04-16 11:39:10
+trace 20,check credit,2013-04-16 11:47:46
+trace 20,calculate capacity,2013-04-16 11:52:42
+trace 20,check system,2013-04-16 11:53:15
+trace 20,reject,2013-04-16 11:53:49
+trace 20,send decision e-mail,2013-04-16 11:56:23
+trace 21,register application,2013-04-16 11:41:34
+trace 21,check credit,2013-04-16 11:46:00
+trace 21,calculate capacity,2013-04-16 11:52:13
+trace 21,check system,2013-04-16 12:01:34
+trace 21,reject,2013-04-16 12:02:34
+trace 21,send decision e-mail,2013-04-16 12:04:07
+trace 22,register application,2013-04-16 11:43:54
+trace 22,check credit,2013-04-16 11:51:17
+trace 22,calculate capacity,2013-04-16 11:53:02
+trace 22,check system,2013-04-16 11:55:33
+trace 22,reject,2013-04-16 11:57:56
+trace 22,send decision e-mail,2013-04-16 12:02:28
+trace 23,register application,2013-04-16 11:53:52
+trace 23,check credit,2013-04-16 12:00:56
+trace 23,calculate capacity,2013-04-16 12:03:48
+trace 23,check system,2013-04-16 12:09:24
+trace 23,reject,2013-04-16 12:14:44
+trace 23,send decision e-mail,2013-04-16 12:15:36
+trace 24,register application,2013-04-16 11:56:23
+trace 24,check credit,2013-04-16 11:57:30
+trace 24,calculate capacity,2013-04-16 12:07:18
+trace 24,check system,2013-04-16 12:09:03
+trace 24,reject,2013-04-16 12:10:16
+trace 24,send decision e-mail,2013-04-16 12:13:20
+trace 25,register application,2013-04-16 11:58:54
+trace 25,check credit,2013-04-16 12:06:41
+trace 25,calculate capacity,2013-04-16 12:13:20
+trace 25,check system,2013-04-16 12:15:43
+trace 25,reject,2013-04-16 12:23:54
+trace 25,send decision e-mail,2013-04-16 12:30:24
+trace 26,register application,2013-04-16 12:08:23
+trace 26,check credit,2013-04-16 12:09:40
+trace 26,calculate capacity,2013-04-16 12:18:59
+trace 26,check system,2013-04-16 12:21:08
+trace 26,reject,2013-04-16 12:29:38
+trace 26,send decision e-mail,2013-04-16 12:37:12
+trace 27,register application,2013-04-16 12:15:02
+trace 27,check credit,2013-04-16 12:17:29
+trace 27,calculate capacity,2013-04-16 12:19:36
+trace 27,check system,2013-04-16 12:25:01
+trace 27,reject,2013-04-16 12:31:40
+trace 27,send decision e-mail,2013-04-16 12:40:20
+trace 28,register application,2013-04-16 12:22:21
+trace 28,check credit,2013-04-16 12:22:58
+trace 28,calculate capacity,2013-04-16 12:24:28
+trace 28,check system,2013-04-16 12:32:53
+trace 28,reject,2013-04-16 12:38:15
+trace 28,send decision e-mail,2013-04-16 12:38:24
+trace 29,register application,2013-04-16 12:23:18
+trace 29,check credit,2013-04-16 12:27:51
+trace 29,calculate capacity,2013-04-16 12:28:21
+trace 29,check system,2013-04-16 12:29:53
+trace 29,reject,2013-04-16 12:38:04
+trace 29,send decision e-mail,2013-04-16 12:44:15
+trace 30,register application,2013-04-16 12:23:59
+trace 30,check credit,2013-04-16 12:33:21
+trace 30,calculate capacity,2013-04-16 12:35:50
+trace 30,check system,2013-04-16 12:38:37
+trace 30,reject,2013-04-16 12:39:43
+trace 30,send decision e-mail,2013-04-16 12:48:32
+trace 31,register application,2013-04-16 12:31:36
+trace 31,check credit,2013-04-16 12:34:39
+trace 31,calculate capacity,2013-04-16 12:36:54
+trace 31,check system,2013-04-16 12:44:12
+trace 31,reject,2013-04-16 12:53:01
+trace 31,send decision e-mail,2013-04-16 13:01:36
+trace 32,register application,2013-04-16 12:33:43
+trace 32,check credit,2013-04-16 12:43:38
+trace 32,calculate capacity,2013-04-16 12:49:45
+trace 32,check system,2013-04-16 12:59:16
+trace 32,reject,2013-04-16 13:00:16
+trace 32,send decision e-mail,2013-04-16 13:09:04
+trace 33,register application,2013-04-16 12:39:48
+trace 33,check credit,2013-04-16 12:44:30
+trace 33,calculate capacity,2013-04-16 12:47:48
+trace 33,check system,2013-04-16 12:50:12
+trace 33,reject,2013-04-16 12:51:43
+trace 33,send decision e-mail,2013-04-16 12:53:59
+trace 34,register application,2013-04-16 12:42:58
+trace 34,check credit,2013-04-16 12:51:32
+trace 34,calculate capacity,2013-04-16 12:52:41
+trace 34,check system,2013-04-16 12:58:09
+trace 34,reject,2013-04-16 13:05:28
+trace 34,send decision e-mail,2013-04-16 13:09:47
+trace 35,register application,2013-04-16 12:45:12
+trace 35,check credit,2013-04-16 12:48:28
+trace 35,calculate capacity,2013-04-16 12:49:42
+trace 35,check system,2013-04-16 12:56:27
+trace 35,reject,2013-04-16 12:59:17
+trace 35,send decision e-mail,2013-04-16 13:06:30
+trace 36,register application,2013-04-16 12:53:21
+trace 36,check credit,2013-04-16 12:57:50
+trace 36,calculate capacity,2013-04-16 13:03:04
+trace 36,check system,2013-04-16 13:13:00
+trace 36,reject,2013-04-16 13:18:10
+trace 36,send decision e-mail,2013-04-16 13:23:13
+trace 37,register application,2013-04-16 12:59:23
+trace 37,check credit,2013-04-16 13:08:04
+trace 37,calculate capacity,2013-04-16 13:09:53
+trace 37,check system,2013-04-16 13:12:12
+trace 37,reject,2013-04-16 13:19:27
+trace 37,send decision e-mail,2013-04-16 13:26:02
+trace 38,register application,2013-04-16 13:02:29
+trace 38,check credit,2013-04-16 13:02:54
+trace 38,calculate capacity,2013-04-16 13:07:55
+trace 38,check system,2013-04-16 13:13:00
+trace 38,reject,2013-04-16 13:18:15
+trace 38,send decision e-mail,2013-04-16 13:21:22
+trace 39,register application,2013-04-16 13:03:47
+trace 39,check credit,2013-04-16 13:05:57
+trace 39,calculate capacity,2013-04-16 13:09:25
+trace 39,check system,2013-04-16 13:13:11
+trace 39,reject,2013-04-16 13:16:42
+trace 39,send decision e-mail,2013-04-16 13:20:43
+trace 40,register application,2013-04-16 13:05:55
+trace 40,check credit,2013-04-16 13:08:33
+trace 40,calculate capacity,2013-04-16 13:13:06
+trace 40,check system,2013-04-16 13:18:13
+trace 40,reject,2013-04-16 13:21:31
+trace 40,send decision e-mail,2013-04-16 13:27:07
+trace 41,register application,2013-04-16 13:07:53
+trace 41,check credit,2013-04-16 13:17:48
+trace 41,calculate capacity,2013-04-16 13:22:26
+trace 41,check system,2013-04-16 13:29:46
+trace 41,reject,2013-04-16 13:34:51
+trace 41,send decision e-mail,2013-04-16 13:40:09
+trace 42,register application,2013-04-16 13:17:43
+trace 42,check credit,2013-04-16 13:18:38
+trace 42,calculate capacity,2013-04-16 13:24:45
+trace 42,check system,2013-04-16 13:34:28
+trace 42,reject,2013-04-16 13:41:02
+trace 42,send decision e-mail,2013-04-16 13:45:36
+trace 43,register application,2013-04-16 13:25:51
+trace 43,check credit,2013-04-16 13:26:56
+trace 43,calculate capacity,2013-04-16 13:32:19
+trace 43,check system,2013-04-16 13:37:33
+trace 43,reject,2013-04-16 13:44:31
+trace 43,send decision e-mail,2013-04-16 13:46:22
+trace 44,register application,2013-04-16 13:28:55
+trace 44,check credit,2013-04-16 13:35:14
+trace 44,check system,2013-04-16 13:42:34
+trace 44,calculate capacity,2013-04-16 13:46:51
+trace 44,accept,2013-04-16 13:47:44
+trace 44,send decision e-mail,2013-04-16 13:52:22
+trace 45,register application,2013-04-16 13:35:16
+trace 45,check credit,2013-04-16 13:45:11
+trace 45,check system,2013-04-16 13:53:43
+trace 45,calculate capacity,2013-04-16 13:59:45
+trace 45,accept,2013-04-16 14:04:05
+trace 45,send decision e-mail,2013-04-16 14:10:03
+trace 46,register application,2013-04-16 13:37:28
+trace 46,check credit,2013-04-16 13:41:19
+trace 46,check system,2013-04-16 13:47:36
+trace 46,calculate capacity,2013-04-16 13:50:22
+trace 46,accept,2013-04-16 13:53:22
+trace 46,send decision e-mail,2013-04-16 13:55:12
+trace 47,register application,2013-04-16 13:47:02
+trace 47,check credit,2013-04-16 13:52:35
+trace 47,check system,2013-04-16 13:54:06
+trace 47,calculate capacity,2013-04-16 14:01:39
+trace 47,accept,2013-04-16 14:05:35
+trace 47,send decision e-mail,2013-04-16 14:13:47
+trace 48,register application,2013-04-16 13:52:52
+trace 48,check credit,2013-04-16 14:02:07
+trace 48,check system,2013-04-16 14:10:48
+trace 48,calculate capacity,2013-04-16 14:20:01
+trace 48,accept,2013-04-16 14:28:55
+trace 48,send decision e-mail,2013-04-16 14:33:26
+trace 49,register application,2013-04-16 13:58:54
+trace 49,check credit,2013-04-16 14:04:51
+trace 49,check system,2013-04-16 14:14:09
+trace 49,calculate capacity,2013-04-16 14:22:39
+trace 49,accept,2013-04-16 14:28:49
+trace 49,send decision e-mail,2013-04-16 14:33:34
+trace 50,register application,2013-04-16 14:06:15
+trace 50,check credit,2013-04-16 14:08:35
+trace 50,check system,2013-04-16 14:08:56
+trace 50,calculate capacity,2013-04-16 14:16:29
+trace 50,accept,2013-04-16 14:18:58
+trace 50,send decision e-mail,2013-04-16 14:21:05
+trace 51,register application,2013-04-16 14:07:14
+trace 51,check credit,2013-04-16 14:08:38
+trace 51,check system,2013-04-16 14:11:08
+trace 51,calculate capacity,2013-04-16 14:13:38
+trace 51,accept,2013-04-16 14:21:39
+trace 51,send decision e-mail,2013-04-16 14:23:35
+trace 52,register application,2013-04-16 14:14:33
+trace 52,check credit,2013-04-16 14:21:34
+trace 52,check system,2013-04-16 14:28:55
+trace 52,calculate capacity,2013-04-16 14:30:16
+trace 52,accept,2013-04-16 14:31:59
+trace 52,send decision e-mail,2013-04-16 14:35:05
+trace 53,register application,2013-04-16 14:21:54
+trace 53,check credit,2013-04-16 14:28:19
+trace 53,check system,2013-04-16 14:33:01
+trace 53,calculate capacity,2013-04-16 14:38:03
+trace 53,accept,2013-04-16 14:42:54
+trace 53,send decision e-mail,2013-04-16 14:44:59
+trace 54,register application,2013-04-16 14:30:40
+trace 54,check credit,2013-04-16 14:37:54
+trace 54,check system,2013-04-16 14:41:24
+trace 54,calculate capacity,2013-04-16 14:49:59
+trace 54,accept,2013-04-16 14:50:54
+trace 54,send decision e-mail,2013-04-16 14:53:19
+trace 55,register application,2013-04-16 14:36:38
+trace 55,check credit,2013-04-16 14:45:02
+trace 55,check system,2013-04-16 14:45:57
+trace 55,calculate capacity,2013-04-16 14:49:10
+trace 55,accept,2013-04-16 14:49:50
+trace 55,send decision e-mail,2013-04-16 14:51:33
+trace 56,register application,2013-04-16 14:45:09
+trace 56,check credit,2013-04-16 14:49:59
+trace 56,check system,2013-04-16 14:51:05
+trace 56,calculate capacity,2013-04-16 15:01:04
+trace 56,reject,2013-04-16 15:09:11
+trace 56,send decision e-mail,2013-04-16 15:12:05
+trace 57,register application,2013-04-16 14:55:02
+trace 57,check credit,2013-04-16 14:57:09
+trace 57,check system,2013-04-16 15:06:56
+trace 57,calculate capacity,2013-04-16 15:14:55
+trace 57,reject,2013-04-16 15:23:04
+trace 57,send decision e-mail,2013-04-16 15:31:27
+trace 58,register application,2013-04-16 14:57:40
+trace 58,check credit,2013-04-16 15:01:45
+trace 58,check system,2013-04-16 15:06:08
+trace 58,calculate capacity,2013-04-16 15:12:27
+trace 58,reject,2013-04-16 15:17:27
+trace 58,send decision e-mail,2013-04-16 15:26:09
+trace 59,register application,2013-04-16 15:07:24
+trace 59,check credit,2013-04-16 15:12:00
+trace 59,check system,2013-04-16 15:20:45
+trace 59,calculate capacity,2013-04-16 15:29:06
+trace 59,reject,2013-04-16 15:32:38
+trace 59,send decision e-mail,2013-04-16 15:39:36
+trace 60,register application,2013-04-16 15:11:06
+trace 60,check credit,2013-04-16 15:18:04
+trace 60,check system,2013-04-16 15:25:54
+trace 60,calculate capacity,2013-04-16 15:31:40
+trace 60,reject,2013-04-16 15:35:59
+trace 60,send decision e-mail,2013-04-16 15:39:44
+trace 61,register application,2013-04-16 15:16:08
+trace 61,check credit,2013-04-16 15:21:02
+trace 61,check system,2013-04-16 15:27:44
+trace 61,calculate capacity,2013-04-16 15:32:55
+trace 61,reject,2013-04-16 15:35:20
+trace 61,send decision e-mail,2013-04-16 15:36:24
+trace 62,register application,2013-04-16 15:21:08
+trace 62,check credit,2013-04-16 15:28:44
+trace 62,check system,2013-04-16 15:32:47
+trace 62,calculate capacity,2013-04-16 15:33:29
+trace 62,reject,2013-04-16 15:35:21
+trace 62,send decision e-mail,2013-04-16 15:40:59
+trace 63,register application,2013-04-16 15:28:20
+trace 63,check credit,2013-04-16 15:36:22
+trace 63,check system,2013-04-16 15:43:11
+trace 63,calculate capacity,2013-04-16 15:52:40
+trace 63,reject,2013-04-16 15:53:54
+trace 63,send decision e-mail,2013-04-16 16:01:33
+trace 64,register application,2013-04-16 15:36:26
+trace 64,check credit,2013-04-16 15:44:21
+trace 64,check system,2013-04-16 15:47:58
+trace 64,calculate capacity,2013-04-16 15:57:45
+trace 64,reject,2013-04-16 16:07:12
+trace 64,send decision e-mail,2013-04-16 16:16:45
+trace 65,register application,2013-04-16 15:42:12
+trace 65,check credit,2013-04-16 15:51:25
+trace 65,check system,2013-04-16 15:51:38
+trace 65,calculate capacity,2013-04-16 15:59:30
+trace 65,reject,2013-04-16 16:01:45
+trace 65,send decision e-mail,2013-04-16 16:06:33
+trace 66,register application,2013-04-16 15:44:22
+trace 66,check credit,2013-04-16 15:49:35
+trace 66,check system,2013-04-16 15:54:57
+trace 66,calculate capacity,2013-04-16 15:59:49
+trace 66,reject,2013-04-16 16:08:41
+trace 66,send decision e-mail,2013-04-16 16:14:29
+trace 67,register application,2013-04-16 15:45:12
+trace 67,check credit,2013-04-16 15:54:39
+trace 67,check system,2013-04-16 16:02:54
+trace 67,calculate capacity,2013-04-16 16:06:25
+trace 67,reject,2013-04-16 16:11:14
+trace 67,send decision e-mail,2013-04-16 16:19:00
+trace 68,register application,2013-04-16 15:47:57
+trace 68,check credit,2013-04-16 15:51:13
+trace 68,check system,2013-04-16 15:56:54
+trace 68,calculate capacity,2013-04-16 16:06:49
+trace 68,reject,2013-04-16 16:13:47
+trace 68,send decision e-mail,2013-04-16 16:14:27
+trace 69,register application,2013-04-16 15:55:01
+trace 69,check credit,2013-04-16 16:02:53
+trace 69,check system,2013-04-16 16:10:42
+trace 69,calculate capacity,2013-04-16 16:19:03
+trace 69,reject,2013-04-16 16:22:43
+trace 69,send decision e-mail,2013-04-16 16:29:45
+trace 70,register application,2013-04-16 16:04:04
+trace 70,check credit,2013-04-16 16:11:08
+trace 70,check system,2013-04-16 16:12:38
+trace 70,calculate capacity,2013-04-16 16:16:14
+trace 70,reject,2013-04-16 16:17:08
+trace 70,send decision e-mail,2013-04-16 16:26:39
+trace 71,register application,2013-04-16 16:04:51
+trace 71,check credit,2013-04-16 16:06:50
+trace 71,check system,2013-04-16 16:11:26
+trace 71,calculate capacity,2013-04-16 16:12:40
+trace 71,reject,2013-04-16 16:16:40
+trace 71,send decision e-mail,2013-04-16 16:25:20
+trace 72,register application,2013-04-16 16:12:28
+trace 72,check credit,2013-04-16 16:19:18
+trace 72,check system,2013-04-16 16:28:10
+trace 72,calculate capacity,2013-04-16 16:29:59
+trace 72,reject,2013-04-16 16:30:40
+trace 72,send decision e-mail,2013-04-16 16:37:50
+trace 73,register application,2013-04-16 16:21:59
+trace 73,check credit,2013-04-16 16:24:26
+trace 73,check system,2013-04-16 16:25:21
+trace 73,calculate capacity,2013-04-16 16:28:18
+trace 73,reject,2013-04-16 16:28:19
+trace 73,send decision e-mail,2013-04-16 16:37:47
+trace 74,register application,2013-04-16 16:27:26
+trace 74,check credit,2013-04-16 16:36:21
+trace 74,check system,2013-04-16 16:41:13
+trace 74,calculate capacity,2013-04-16 16:42:25
+trace 74,reject,2013-04-16 16:50:48
+trace 74,send decision e-mail,2013-04-16 16:58:30
+trace 75,register application,2013-04-16 16:34:36
+trace 75,check credit,2013-04-16 16:44:34
+trace 75,check system,2013-04-16 16:49:20
+trace 75,calculate capacity,2013-04-16 16:49:25
+trace 75,reject,2013-04-16 16:58:09
+trace 75,send decision e-mail,2013-04-16 17:02:25
+trace 76,register application,2013-04-16 16:36:32
+trace 76,check credit,2013-04-16 16:42:53
+trace 76,check system,2013-04-16 16:43:15
+trace 76,calculate capacity,2013-04-16 16:47:08
+trace 76,reject,2013-04-16 16:47:11
+trace 76,send decision e-mail,2013-04-16 16:53:07
+trace 77,register application,2013-04-16 16:39:44
+trace 77,check credit,2013-04-16 16:49:31
+trace 77,check system,2013-04-16 16:57:33
+trace 77,calculate capacity,2013-04-16 17:02:42
+trace 77,reject,2013-04-16 17:04:14
+trace 77,send decision e-mail,2013-04-16 17:10:29
+trace 78,register application,2013-04-16 16:49:13
+trace 78,check credit,2013-04-16 16:49:35
+trace 78,check system,2013-04-16 16:53:07
+trace 78,calculate capacity,2013-04-16 17:02:56
+trace 78,reject,2013-04-16 17:08:48
+trace 78,send decision e-mail,2013-04-16 17:10:32
+trace 79,register application,2013-04-16 16:50:26
+trace 79,check credit,2013-04-16 16:52:17
+trace 79,check system,2013-04-16 17:00:35
+trace 79,calculate capacity,2013-04-16 17:04:21
+trace 79,reject,2013-04-16 17:07:09
+trace 79,send decision e-mail,2013-04-16 17:10:42
+trace 80,register application,2013-04-16 16:52:37
+trace 80,check credit,2013-04-16 16:58:50
+trace 80,check system,2013-04-16 17:03:27
+trace 80,calculate capacity,2013-04-16 17:07:32
+trace 80,reject,2013-04-16 17:07:42
+trace 80,send decision e-mail,2013-04-16 17:12:37
+trace 81,register application,2013-04-16 16:53:50
+trace 81,check credit,2013-04-16 16:56:13
+trace 81,check system,2013-04-16 16:59:05
+trace 81,calculate capacity,2013-04-16 17:00:02
+trace 81,reject,2013-04-16 17:01:46
+trace 81,send decision e-mail,2013-04-16 17:11:45
+trace 82,register application,2013-04-16 17:02:12
+trace 82,check credit,2013-04-16 17:05:50
+trace 82,calculate capacity,2013-04-16 17:14:23
+trace 82,reject,2013-04-16 17:23:29
+trace 82,send decision e-mail,2013-04-16 17:29:50
+trace 83,register application,2013-04-16 17:08:37
+trace 83,check credit,2013-04-16 17:08:59
+trace 83,calculate capacity,2013-04-16 17:11:19
+trace 83,reject,2013-04-16 17:14:34
+trace 83,send decision e-mail,2013-04-16 17:15:52
+trace 84,register application,2013-04-16 17:13:44
+trace 84,check credit,2013-04-16 17:19:10
+trace 84,calculate capacity,2013-04-16 17:28:44
+trace 84,reject,2013-04-16 17:31:43
+trace 84,send decision e-mail,2013-04-16 17:31:48
+trace 85,register application,2013-04-16 17:23:01
+trace 85,check credit,2013-04-16 17:23:57
+trace 85,calculate capacity,2013-04-16 17:33:46
+trace 85,reject,2013-04-16 17:35:25
+trace 85,send decision e-mail,2013-04-16 17:41:54
+trace 86,register application,2013-04-16 17:30:13
+trace 86,check credit,2013-04-16 17:33:08
+trace 86,calculate capacity,2013-04-16 17:42:03
+trace 86,reject,2013-04-16 17:46:22
+trace 86,send decision e-mail,2013-04-16 17:55:11
+trace 87,register application,2013-04-16 17:30:18
+trace 87,check credit,2013-04-16 17:38:24
+trace 87,calculate capacity,2013-04-16 17:42:36
+trace 87,reject,2013-04-16 17:46:43
+trace 87,send decision e-mail,2013-04-16 17:50:52
+trace 88,register application,2013-04-16 17:34:02
+trace 88,check credit,2013-04-16 17:39:03
+trace 88,calculate capacity,2013-04-16 17:43:45
+trace 88,reject,2013-04-16 17:47:42
+trace 88,send decision e-mail,2013-04-16 17:52:06
+trace 89,register application,2013-04-16 17:37:54
+trace 89,check credit,2013-04-16 17:43:38
+trace 89,calculate capacity,2013-04-16 17:49:51
+trace 89,reject,2013-04-16 17:57:53
+trace 89,send decision e-mail,2013-04-16 18:02:19
+trace 90,register application,2013-04-16 17:47:34
+trace 90,calculate capacity,2013-04-16 17:51:43
+trace 90,check credit,2013-04-16 17:56:37
+trace 90,accept,2013-04-16 18:00:39
+trace 90,send decision e-mail,2013-04-16 18:08:16
+trace 91,register application,2013-04-16 17:50:09
+trace 91,check system,2013-04-16 17:56:07
+trace 91,check credit,2013-04-16 18:05:07
+trace 91,calculate capacity,2013-04-16 18:12:20
+trace 91,reject,2013-04-16 18:16:25
+trace 91,send decision e-mail,2013-04-16 18:21:56
+trace 92,register application,2013-04-16 17:57:39
+trace 92,check system,2013-04-16 18:00:46
+trace 92,check credit,2013-04-16 18:02:11
+trace 92,calculate capacity,2013-04-16 18:10:19
+trace 92,accept,2013-04-16 18:15:02
+trace 92,send decision e-mail,2013-04-16 18:17:03
+trace 93,register application,2013-04-16 18:02:44
+trace 93,check system,2013-04-16 18:05:40
+trace 93,calculate capacity,2013-04-16 18:11:05
+trace 93,check credit,2013-04-16 18:20:57
+trace 93,reject,2013-04-16 18:23:09
+trace 93,send decision e-mail,2013-04-16 18:24:20
+trace 94,register application,2013-04-16 18:07:58
+trace 94,check system,2013-04-16 18:13:19
+trace 94,calculate capacity,2013-04-16 18:21:06
+trace 94,check credit,2013-04-16 18:26:04
+trace 94,reject,2013-04-16 18:33:36
+trace 94,send decision e-mail,2013-04-16 18:33:47
+trace 95,register application,2013-04-16 18:08:52
+trace 95,check system,2013-04-16 18:15:23
+trace 95,calculate capacity,2013-04-16 18:16:39
+trace 95,check credit,2013-04-16 18:17:34
+trace 95,reject,2013-04-16 18:18:20
+trace 95,send decision e-mail,2013-04-16 18:19:08
+trace 96,register application,2013-04-16 18:12:22
+trace 96,check system,2013-04-16 18:16:44
+trace 96,calculate capacity,2013-04-16 18:25:09
+trace 96,check credit,2013-04-16 18:33:55
+trace 96,reject,2013-04-16 18:35:45
+trace 96,send decision e-mail,2013-04-16 18:35:50
+trace 97,register application,2013-04-16 18:17:39
+trace 97,calculate capacity,2013-04-16 18:23:46
+trace 97,check system,2013-04-16 18:27:37
+trace 97,check credit,2013-04-16 18:33:39
+trace 97,reject,2013-04-16 18:43:18
+trace 97,send decision e-mail,2013-04-16 18:51:36
+trace 98,register application,2013-04-16 18:22:48
+trace 98,calculate capacity,2013-04-16 18:29:05
+trace 98,check system,2013-04-16 18:34:10
+trace 98,check credit,2013-04-16 18:37:09
+trace 98,reject,2013-04-16 18:43:57
+trace 98,send decision e-mail,2013-04-16 18:50:47
+trace 99,register application,2013-04-16 18:30:02
+trace 99,calculate capacity,2013-04-16 18:39:07
+trace 99,check credit,2013-04-16 18:48:13
+trace 99,reject,2013-04-16 18:50:59
+trace 99,send decision e-mail,2013-04-16 18:55:34

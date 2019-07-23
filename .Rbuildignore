@@ -1,0 +1,5 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+test.R
+^\.httr-oauth$
+^\.travis\.yml$

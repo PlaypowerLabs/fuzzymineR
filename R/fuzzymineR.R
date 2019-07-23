@@ -1,0 +1,50 @@
+#'@title fuzzymineR - Build Process Model from Event Data
+#'
+#'@description fuzzymineR package is usefull when a user want to mine process models
+#'from event data. It contains functions by which a user has to only provide a
+#'CSV file and by applying a series of functions one can mine process models.
+#'
+#'@section Requirments :
+#'System should have \strong{java 8} or higher version. The fuzzy algorithm is
+#'written in java and hence it is required to install java on your system.
+#'
+#'
+#'@section Details:
+#'fuzzymineR provides a way to create \strong{Adaptive Process Models} in which
+#'you can configure the simplification level by setting the parameters.
+#'Hence users can get the derired level of abstraction that they did like to work with. For
+#'process discovery, fuzzy mining algorithm is considered one of the best algorithms
+#'because it can deal with less-structered event data(which is the case with real world data) very well and saves you from
+#'creating \strong{Spaghetti models}.
+#'
+#'@section Functions :
+#'
+#'\itemize{
+#'\item \code{create_eventlog} : creates eventlog object from a CSV file
+#'\item \code{mine_fuzzy_model} : applies fuzzy mining algorithm on the eventlog object and returns a list of metrics
+#'\item \code{viz_fuzzy_model} : creates process model
+#'
+#'}
+#'
+#'@section Author(s) :
+#'\strong{Maintainer :} Tirth Shah \email{tirthshah1711@@gmail.com}
+#'
+#'Authors :
+#'\itemize{
+#'\item Nirmal Patel
+#'\item Tirth Shah
+#'}
+#'
+#'@section Useful Links :
+#'\itemize{
+#'\item \href{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.81.1207&rep=rep1&type=pdf}{Fuzzy Mining - Adaptive Process Simplification
+#' Based on Multi-Perspective Metrics}
+#'
+#'}
+#'
+#'
+#'
+#'@docType fuzzymineR
+#'@name fuzzymineR
+#'
+NULL
