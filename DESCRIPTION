@@ -1,6 +1,6 @@
 Package: fuzzymineR
 Type: Package
-Title: Build Process Model from Event Data
+Title: Build Fuzzy Process Model from Event Data
 Version: 0.1.0
 Author: Tirth Shah, Nirmal Patel
 Maintainer: Tirth Shah <tirthshah1711@gmail.com>

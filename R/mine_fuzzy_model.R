@@ -90,18 +90,6 @@ mine_fuzzy_model <- function(eventlog) {
   temp_dir <- tempdir()
   user_dir <- getwd()
 
-
-  update_ini_file <- function() {
-
-    ini_file <- read_lines(file.path(pkg_dir, "prom", "ProM.ini"))
-    ini_file <- str_replace_all(ini_file, "__FMPKGFOLDER__", file.path(pkg_dir, "prom", "fuzzy_miner_packages"))
-
-    write_lines(ini_file, file.path(pkg_dir, "prom", "ProM.ini"))
-
-  }
-
-  update_ini_file()
-
   #checking if timestamps of any event is missing
   if (any(is.na(eventlog %>% pull(timestamp(eventlog))))) {
     warning("Some of the timestamps in the supplied event log are missing (NA values). This may result in a invalid process map!")
