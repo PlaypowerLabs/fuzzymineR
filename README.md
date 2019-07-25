@@ -37,7 +37,7 @@ viz_fuzzy_model(metrics = metrics,
     node_sig_threshold = 0,  
     edge_sig_threshold = 0.3,  
     sig_weights = c(1,0),  
-    corr_weights = c(0,0,0,0,0))'  
+    corr_weights = c(0,0,0,0,0))` 
 
     
 This creates a process model simply based on the frequency of the ordering of the
