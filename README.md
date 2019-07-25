@@ -8,7 +8,7 @@
 ### About fuzzymineR ### 
 
 fuzzymineR package consists of functions which are helpful when a user wants to 
-build process model from event log data.It contains functions by which a user has to only provide a CSV file and by applying a series of functions one can mine process models.fuzzymineR provides a way to create Adaptive Process Models in which you can configure the simplification level by setting the parameters. Hence users can get the derired level of abstraction that they did like to work with. For process discovery, fuzzy mining algorithm is considered one of the best algorithms because it can deal with less-structered event data(which is the case with real world data) very well and saves you from creating **Spaghetti models**.
+build process model from event log data.It contains functions by which a user has to only provide a `data.frame` and by applying a series of functions one can mine process models.fuzzymineR provides a way to create Adaptive Process Models in which you can configure the simplification level by setting the parameters. Hence users can get the derired level of abstraction that they did like to work with. For process discovery, fuzzy mining algorithm is considered one of the best algorithms because it can deal with less-structered event data(which is the case with real world data) very well and saves you from creating **Spaghetti models**.
 
 
 ### Requirments ###  
@@ -17,7 +17,7 @@ System should have **java 8** or higher version. The fuzzy algorithm is written 
 
 ### About Functions ###  
 
-* `create_eventlog` : creates eventlog object from a CSV file  
+* `create_eventlog` : creates eventlog object from a `data.frame`  
 
 * `mine_fuzzy_model` : applies fuzzy mining algorithm on the eventlog object and returns a list of metrics  
 

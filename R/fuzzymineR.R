@@ -2,7 +2,7 @@
 #'
 #'@description fuzzymineR package is usefull when a user want to mine process models
 #'from event data. It contains functions by which a user has to only provide a
-#'CSV file and by applying a series of functions one can mine process models.
+#'\code{data.frame} and by applying a series of functions one can mine process models.
 #'
 #'@section Requirments :
 #'System should have \strong{java 8} or higher version. The fuzzy algorithm is
@@ -20,7 +20,7 @@
 #'@section Functions :
 #'
 #'\itemize{
-#'\item \code{create_eventlog} : creates eventlog object from a CSV file
+#'\item \code{create_eventlog} : creates eventlog object from a \code{data.frame}
 #'\item \code{mine_fuzzy_model} : applies fuzzy mining algorithm on the eventlog object and returns a list of metrics
 #'\item \code{viz_fuzzy_model} : creates process model
 #'

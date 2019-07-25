@@ -1,8 +1,8 @@
 #' @title Create an eventlog object
 #'
-#' @description  Create an event log object from a CSV file on the disk.
+#' @description  Create an event log object from \code{data.frame} on the disk.
 #'
-#' @param df a \code{data.frame}. This contains the event data which is imported as a \code{data.frame}
+#' @param df a \code{data.frame} consisting of event log data
 #' @param case_id character vector of length 1. It contains column/attribute name which has unique cases in event data. (Mandatory)
 #' @param activity_id character vector of length 1. It contains column/attribute name which has unique activities in event data. (Mandatory)
 #' @param activity_instance_id character vector of length 1. It contains column/attribute name which has enumeration of activity occurances. An specific activity performed by a specific case at specific point in time is called an activity instance. For all lifecycle instances of a single activity has same activity instance Id. (Optional)
@@ -10,11 +10,9 @@
 #' @param timestamp character vector of length 1.It contains column/attribute name which specifies the timestamp when the activity was performed in event data. (Mandatory)
 #' @param resource_id character vector of length 1. It conatins column/attribute name which specifies the handler/resource of an activity in event data. (Optional)
 #'
-#' @details This function takes a CSV file as input and gives an eventlog object.
+#' @details This function takes a \code{data.frame} as input and gives an eventlog object.
 #' The function is only applicable for eventlog data. Eventlog data must contain
-#' Case, Activity and Timestamp attributes. For further process mining we must
-#' convert this event data which is in CSV format to a more suitable XES format
-#' which is an extension of XML format.
+#' Case, Activity and Timestamp attributes.
 #'
 #' @seealso \link[bupaR]{eventlog}, \link[fuzzymineR]{mine_fuzzy_model}, \link[fuzzymineR]{viz_fuzzy_model}
 #'
