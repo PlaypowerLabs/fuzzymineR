@@ -130,7 +130,7 @@ mine_fuzzy_model <- function(eventlog) {
   )
 
   # Path to my template scripts
-  cli_template_fpath <- file.path(path.package("fuzzymineR"), "prom", "prom_cli_template_fuzzy_miner.txt")
+  cli_template_fpath <- file.path(pkg_dir, "prom", "prom_cli_template_fuzzy_miner.txt")
 
   # Changing the placeholders in template script-1 with the actual values
   cli_template <- read_lines(cli_template_fpath)

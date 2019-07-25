@@ -144,6 +144,14 @@ viz_fuzzy_model <- function(metrics, node_sig_threshold = 0, edge_sig_threshold 
     stop("Invalid class of node_sig_threshold or edge_sig_threshold or edge_sig_to_corr_ratio")
   }
 
+  if(all(node_sig_weights == 0)){
+    stop("Invalid node significance weights given. All the metrics can not be given zero weight")
+  }
+
+  if(all(sig_weights == 0) && all(corr_weights == 0)){
+    stop("Invalid edge significance or correlation weights given. All metrics can not be given zero weight")
+  }
+
 
   #calculating aggregate node significance values
   agg_node_sig = (metrics$freq_sig_unary_log)*(node_sig_weights[1]) + (metrics$routing_sig_unary_der)*(node_sig_weights[2])
@@ -157,24 +165,28 @@ viz_fuzzy_model <- function(metrics, node_sig_threshold = 0, edge_sig_threshold 
   max_agg_edge_sig_value = max(agg_edge_sig)
 
   #normalized values
+  if(max_agg_node_sig_value != 0){
   agg_edge_sig = agg_edge_sig /max_agg_edge_sig_value
+  }
 
   #calculating aggregate edge correlation values
   agg_edge_corr = (metrics$prox_corr_binary_log)*(corr_weights[1]) + (metrics$end_point_corr_binary_log)*(corr_weights[2]) + (metrics$data_type_corr_binary_log)*(corr_weights[4]) + (metrics$data_value_corr_binary_log)*(corr_weights[5]) + (metrics$org_corr_binary_log)*(corr_weights[3])
   max_agg_edge_corr_value = max(agg_edge_corr)
 
   #normalized values
+  if(max_agg_edge_corr_value != 0){
   agg_edge_corr = agg_edge_corr /max_agg_edge_corr_value
+  }
 
   #Taking weighted average of agg_edge_sig and agg_edge_corr
   agg_edge_values = (agg_edge_sig*edge_sig_to_corr_ratio) + agg_edge_corr*(1 - edge_sig_to_corr_ratio)
   max_agg_edge_value = max(agg_edge_values)
 
   #normalize values
+  if(max_agg_edge_value != 0){
   agg_edge_values = agg_edge_values /max_agg_edge_value
-
+  }
   #Simplification step-1 removing all conflicting edges
-
   agg_edge_values_1 <- agg_edge_values
 
   for(i in 2:nrow(agg_edge_values)){
@@ -238,19 +250,32 @@ viz_fuzzy_model <- function(metrics, node_sig_threshold = 0, edge_sig_threshold 
 
   for(i in 1:nrow(agg_edge_values_2)) {
 
-    if(all(agg_edge_values_2[i,] == 0) && any(agg_local_sig[i,] != 0)) {
-      agg_edge_values_2[i,which.max(agg_local_sig[i,])] = max(agg_local_sig[i,])
+    if(all(agg_edge_values_2[i,-i] == 0) && any(agg_local_sig[i,-i] != 0)) {
+      agg_edge_values_2[i,names(which.max(agg_local_sig[i,-i]))] = max(agg_local_sig[i,-i])
     }
 
-    if(all(agg_edge_values_2[,i] == 0) && any(agg_local_sig[,i] != 0)) {
-      agg_edge_values_2[which.max(agg_local_sig[,i]),i] = max(agg_local_sig[,i])
+    if(all(agg_edge_values_2[-i,i] == 0) && any(agg_local_sig[-i,i] != 0)) {
+      agg_edge_values_2[names(which.max(agg_local_sig[-i,i])),i] = max(agg_local_sig[-i,i])
     }
 
   }
 
   #Simplification step-3 --> Clustering of Nodes!!
+  agg_edge_values_3 <- matrix(nrow = nrow(agg_edge_values_2), ncol = ncol(agg_edge_values_2))
+  rownames(agg_edge_values_3) <- rownames(agg_edge_values_2)
+  colnames(agg_edge_values_3) <- colnames(agg_edge_values_2)
+  for(i in 1:nrow(agg_edge_values_2)){
+    for(j in 1:ncol(agg_edge_values_2)){
+      if(agg_edge_values_2[i,j] == 0){
+        agg_edge_values_3[i,j] = agg_edge_values_2[i,j]
+      }
+      else{
+        agg_edge_values_3[i,j] = agg_edge_values[i,j]
+      }
 
-  agg_edge_values_3 <- agg_edge_values_2
+    }
+  }
+
 
   #Task-1 --> Find Victims and convert them to cluster nodes
 
@@ -500,6 +525,7 @@ viz_fuzzy_model <- function(metrics, node_sig_threshold = 0, edge_sig_threshold 
     }
   }
 
+  edge_width <- ifelse(edge_width<0.25,0.25,edge_width)
   edge_labels <- round(edge_labels, 2)
   edge_labels <- paste0(edge_labels,"%")
   agg_node_sig_2 <- c()
@@ -518,8 +544,10 @@ viz_fuzzy_model <- function(metrics, node_sig_threshold = 0, edge_sig_threshold 
 
   }
   names(agg_node_sig_2) = rownames(agg_edge_values_3)
-  agg_node_sig_2 <- round(agg_node_sig_2,2)
+  agg_node_sig_2 <- round(agg_node_sig_2,3)
   node_labels <- paste0(names(agg_node_sig_2),"\\n","(",agg_node_sig_2,")")
+
+
 
   #creating graph nodes and edges
   create_node_df(n = length(node_labels),
@@ -545,13 +573,17 @@ viz_fuzzy_model <- function(metrics, node_sig_threshold = 0, edge_sig_threshold 
                  color = "blue"
   ) -> edges
 
+  min_sig_level <- min(nodes$color_level)
+  max_sig_level <- max(nodes$color_level[nodes$color_level < Inf])
+
 
   create_graph(nodes, edges) %>%
     add_global_graph_attrs(attr = "rankdir", value = "LR",attr_type = "graph") %>%
     colorize_node_attrs(node_attr_from = "color_level",
                         node_attr_to = "fillcolor",
                         default_color = "white",
-                        palette = "Blues") %>%
+                        palette = "Blues",
+                        cut_points = seq(min_sig_level - .1, max_sig_level + .1, length.out = 9)) %>%
     add_global_graph_attrs(attr = "layout", value =  "dot", attr_type = "graph") -> graph
 
   #Produces process model
