@@ -26,18 +26,18 @@ System should have **java 8** or higher version. The fuzzy algorithm is written 
 
 ### Example ###  
 
-`library(fuzzymineR)  
-data("artificial_loan_process")  
-log <- create_eventlog(artificial_loan_process,  
-                       case_id = "case", 
-                       activity_id = "event",  
-                       timestamp = "completeTime")  
-metrics <- mine_fuzzy_model(log)  
-viz_fuzzy_model(metrics = metrics,  
-    node_sig_threshold = 0,  
-    edge_sig_threshold = 0.3,  
-    sig_weights = c(1,0),  
-    corr_weights = c(0,0,0,0,0))` 
+`library(fuzzymineR)`      
+`data("artificial_loan_process")`  
+`log <- create_eventlog(artificial_loan_process,`  
+`                       case_id = "case",`  
+`                       activity_id = "event",`  
+`                       timestamp = "completeTime")`  
+`metrics <- mine_fuzzy_model(log)`  
+`viz_fuzzy_model(metrics = metrics,`  
+`    node_sig_threshold = 0,`  
+`    edge_sig_threshold = 0.3,`  
+`    sig_weights = c(1,0),`  
+`    corr_weights = c(0,0,0,0,0))`  
 
     
 This creates a process model simply based on the frequency of the ordering of the
