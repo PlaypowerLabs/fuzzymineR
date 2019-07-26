@@ -24,6 +24,14 @@ Your system should have **Java 8** or higher version.
 * `mine_fuzzy_model`: Applies fuzzy mining algorithm on the eventlog object and returns a list of metrics  
 * `viz_fuzzy_model`: Creates process model after processing the list of metrics  
 
+### Installation ###
+
+To install the package, use the following command:
+
+```r
+devtools::install_github("nirmalpatel/fuzzymineR")
+```
+
 ### Example ###  
 
 After installing the package, please run the following example code:
@@ -59,6 +67,6 @@ Pleae read the documentation or the research paper linked below for understandin
 
 ### Authors ###
 
-Tirth Shah (DA-IICT)
-Nirmal Patel (Playpower Labs)
+1. Tirth Shah (DA-IICT)
+2. Nirmal Patel (Playpower Labs)
 
