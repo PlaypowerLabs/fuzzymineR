@@ -3,6 +3,7 @@
 #' @description Takes eventlog as input, applies fuzzy mining algorithm and returns a list of metrics which specifies significance for different activities and their precedence relations.
 #'
 #' @param eventlog An eventlog object
+#' @param verbose logical. Should output messages from system command be printed in console?
 #'
 #'
 #' @details \strong{\emph{mine_fuzzy_model}} uses \strong{fuzzy mining algorithm} to mine eventlog data
@@ -84,7 +85,7 @@
 #' @import xesreadR
 #'
 #' @export
-mine_fuzzy_model <- function(eventlog) {
+mine_fuzzy_model <- function(eventlog, verbose = FALSE) {
 
   pkg_dir <- path.package("fuzzymineR")
   temp_dir <- tempdir()
@@ -151,17 +152,27 @@ mine_fuzzy_model <- function(eventlog) {
   # Switching the wd to package dir to run the command
   setwd(file.path(pkg_dir, "prom"))
 
-  # Calling java executable script from cmd
-  command <- "java"
-  arguments <- c("-da",
-            "-Xmx1G",
-            "-XX:MaxPermSize=256m",
-            "-classpath",
-            "ProM641.jar",
-            "-Djava.util.Arrays.useLegacyMergeSort=true",
-            "org.processmining.contexts.cli.CLI",
-            "-f", shQuote(cli_script_fpath))
-  system2(command, args = arguments, stdout = NULL, stderr = NULL)
+
+  if(.Platform$OS.type == 'unix'){
+
+    command <- 'sh'
+    arguments <- c('ProM610_CLI.sh', '-f', shQuote(cli_script_fpath))
+
+    if(verbose){
+      system2(command, arguments)
+    } else{
+      system2(command, arguments, stdout = NULL, stderr = NULL)
+    }
+
+  } else{
+
+    if(verbose){
+      shell(paste0('ProM610_CLI.bat',' -f ', shQuote(cli_script_fpath)))
+    } else{
+      x <- shell(paste0('ProM610_CLI.bat',' -f ', shQuote(cli_script_fpath)))
+    }
+
+  }
 
   # Going back to the user dir
   setwd(user_dir)

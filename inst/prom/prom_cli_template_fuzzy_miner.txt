@@ -11,14 +11,14 @@ System.out.println("Object created successfully");
 
 //Mapping of index to names  ------>
 
-System.out.println("Writing names of nodes to a file");
+  System.out.println("Writing names of nodes to a file");
 FileWriter writer = new FileWriter("__OUTNAMES__");
 n = Metrics_Repository.getNumberOfLogEvents();
 for(i=0;i<n;i++)
 {
-node = MFG.getPrimitiveNode(i);
-writer.write(node.getElementName());
-writer.write("\r\n");
+  node = MFG.getPrimitiveNode(i);
+  writer.write(node.getElementName());
+  writer.write("\r\n");
 }
 writer.close();
 
@@ -27,7 +27,7 @@ System.out.println("Write Successfull");
 
 // Uniary Metrics Write ----->
 
-List_UM = Metrics_Repository.getUnaryMetrics();
+  List_UM = Metrics_Repository.getUnaryMetrics();
 
 System.out.println("Writing UM1");
 Obj_UM = List_UM.get(0);
@@ -35,9 +35,9 @@ FileWriter writer = new FileWriter("__UMOUT1__");
 n = Obj_UM.size();
 for(i=0;i<n;i++)
 {
-s = Double.toString(Obj_UM.getMeasure(i));
-writer.write(s);
-writer.write("\r\n");
+  s = Double.toString(Obj_UM.getMeasure(i));
+  writer.write(s);
+  writer.write("\r\n");
 }
 writer.close();
 System.out.println("Write Successfull");
@@ -49,9 +49,9 @@ FileWriter writer = new FileWriter("__UMOUT2__");
 n = Obj_UM.size();
 for(i=0;i<n;i++)
 {
-s = Double.toString(Obj_UM.getMeasure(i));
-writer.write(s);
-writer.write("\r\n");
+  s = Double.toString(Obj_UM.getMeasure(i));
+  writer.write(s);
+  writer.write("\r\n");
 }
 writer.close();
 System.out.println("Write Successfull");
@@ -59,7 +59,7 @@ System.out.println("Write Successfull");
 
 // Binary Metrics Write -------->
 
-List_BLM = Metrics_Repository.getBinaryLogMetrics();
+  List_BLM = Metrics_Repository.getBinaryLogMetrics();
 
 System.out.println("Writing BM1");
 Obj_BLM = List_BLM.get(0);
@@ -67,14 +67,14 @@ n = Obj_BLM.size();
 FileWriter writer = new FileWriter("__BMOUT1__");
 for(i=0;i<n;i++)
 {
-for(j=0;j<n;j++)
-{
-s = Double.toString(Obj_BLM.getMeasure(i,j));
-writer.write(s);
-if(j<n-1)
-writer.write(",");
-}
-writer.write("\r\n");
+  for(j=0;j<n;j++)
+  {
+    s = Double.toString(Obj_BLM.getMeasure(i,j));
+    writer.write(s);
+    if(j<n-1)
+      writer.write(",");
+  }
+  writer.write("\r\n");
 }
 writer.close();
 System.out.println("Write Successfull");
@@ -86,14 +86,14 @@ n = Obj_BLM.size();
 FileWriter writer = new FileWriter("__BMOUT2__");
 for(i=0;i<n;i++)
 {
-for(j=0;j<n;j++)
-{
-s = Double.toString(Obj_BLM.getMeasure(i,j));
-writer.write(s);
-if(j<n-1)
-writer.write(",");
-}
-writer.write("\r\n");
+  for(j=0;j<n;j++)
+  {
+    s = Double.toString(Obj_BLM.getMeasure(i,j));
+    writer.write(s);
+    if(j<n-1)
+      writer.write(",");
+  }
+  writer.write("\r\n");
 }
 writer.close();
 System.out.println("Write Successfull");
@@ -106,14 +106,14 @@ n = Obj_BLM.size();
 FileWriter writer = new FileWriter("__BMOUT3__");
 for(i=0;i<n;i++)
 {
-for(j=0;j<n;j++)
-{
-s = Double.toString(Obj_BLM.getMeasure(i,j));
-writer.write(s);
-if(j<n-1)
-writer.write(",");
-}
-writer.write("\r\n");
+  for(j=0;j<n;j++)
+  {
+    s = Double.toString(Obj_BLM.getMeasure(i,j));
+    writer.write(s);
+    if(j<n-1)
+      writer.write(",");
+  }
+  writer.write("\r\n");
 }
 writer.close();
 System.out.println("Write Successfull");
@@ -125,14 +125,14 @@ n = Obj_BLM.size();
 FileWriter writer = new FileWriter("__BMOUT4__");
 for(i=0;i<n;i++)
 {
-for(j=0;j<n;j++)
-{
-s = Double.toString(Obj_BLM.getMeasure(i,j));
-writer.write(s);
-if(j<n-1)
-writer.write(",");
-}
-writer.write("\r\n");
+  for(j=0;j<n;j++)
+  {
+    s = Double.toString(Obj_BLM.getMeasure(i,j));
+    writer.write(s);
+    if(j<n-1)
+      writer.write(",");
+  }
+  writer.write("\r\n");
 }
 writer.close();
 System.out.println("Write Successfull");
@@ -144,14 +144,14 @@ n = Obj_BLM.size();
 FileWriter writer = new FileWriter("__BMOUT5__");
 for(i=0;i<n;i++)
 {
-for(j=0;j<n;j++)
-{
-s = Double.toString(Obj_BLM.getMeasure(i,j));
-writer.write(s);
-if(j<n-1)
-writer.write(",");
-}
-writer.write("\r\n");
+  for(j=0;j<n;j++)
+  {
+    s = Double.toString(Obj_BLM.getMeasure(i,j));
+    writer.write(s);
+    if(j<n-1)
+      writer.write(",");
+  }
+  writer.write("\r\n");
 }
 writer.close();
 System.out.println("Write Successfull");
@@ -163,14 +163,14 @@ n = Obj_BLM.size();
 FileWriter writer = new FileWriter("__BMOUT6__");
 for(i=0;i<n;i++)
 {
-for(j=0;j<n;j++)
-{
-s = Double.toString(Obj_BLM.getMeasure(i,j));
-writer.write(s);
-if(j<n-1)
-writer.write(",");
-}
-writer.write("\r\n");
+  for(j=0;j<n;j++)
+  {
+    s = Double.toString(Obj_BLM.getMeasure(i,j));
+    writer.write(s);
+    if(j<n-1)
+      writer.write(",");
+  }
+  writer.write("\r\n");
 }
 writer.close();
 System.out.println("Write Successfull");
@@ -183,14 +183,14 @@ n = Obj_BDM.size();
 FileWriter writer = new FileWriter("__BMOUT7__");
 for(i=0;i<n;i++)
 {
-for(j=0;j<n;j++)
-{
-s = Double.toString(Obj_BDM.getMeasure(i,j));
-writer.write(s);
-if(j<n-1)
-writer.write(",");
-}
-writer.write("\r\n");
+  for(j=0;j<n;j++)
+  {
+    s = Double.toString(Obj_BDM.getMeasure(i,j));
+    writer.write(s);
+    if(j<n-1)
+      writer.write(",");
+  }
+  writer.write("\r\n");
 }
 writer.close();
 System.out.println("Write Successfull");
