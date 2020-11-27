@@ -8,6 +8,7 @@ mine_fuzzy_model(eventlog)
 }
 \arguments{
 \item{eventlog}{An eventlog object}
+\item{verbose}{logical. Should output messages from system command be printed in console?}
 }
 \value{
 A list of metrics which contains significance of each activities

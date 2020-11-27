@@ -169,7 +169,7 @@ mine_fuzzy_model <- function(eventlog, verbose = FALSE) {
     if(verbose){
       shell(paste0('ProM610_CLI.bat',' -f ', shQuote(cli_script_fpath)))
     } else{
-      x <- shell(paste0('ProM610_CLI.bat',' -f ', shQuote(cli_script_fpath)))
+      x <- shell(paste0('ProM610_CLI.bat',' -f ', shQuote(cli_script_fpath)), intern = T)
     }
 
   }
