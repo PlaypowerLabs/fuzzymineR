@@ -29,7 +29,7 @@
 #'                        timestamp = "completeTime")
 #'
 #' }
-#' @import readr
+#' @import bupaR
 #' @import dplyr
 #'
 #' @export

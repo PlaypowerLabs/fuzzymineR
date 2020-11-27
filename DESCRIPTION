@@ -15,11 +15,7 @@ Imports:
     bupaR,
     stringr,
     xesreadR,
-    DiagrammeR,
-    edeaR,
-    processmapR,
-    processmonitR,
-    petrinetR
+    DiagrammeR
 License: GPL
 Encoding: UTF-8
 LazyData: true
