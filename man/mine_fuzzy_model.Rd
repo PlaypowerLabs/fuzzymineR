@@ -4,10 +4,11 @@
 \alias{mine_fuzzy_model}
 \title{Mines eventlog data using Fuzzy Algorithm}
 \usage{
-mine_fuzzy_model(eventlog)
+mine_fuzzy_model(eventlog, verbose = FALSE)
 }
 \arguments{
 \item{eventlog}{An eventlog object}
+
 \item{verbose}{logical. Should output messages from system command be printed in console?}
 }
 \value{
@@ -89,4 +90,3 @@ Based on Multi-Perspective Metrics}
 \seealso{
 \link[fuzzymineR]{create_eventlog}, \link[fuzzymineR]{viz_fuzzy_model}
 }
-

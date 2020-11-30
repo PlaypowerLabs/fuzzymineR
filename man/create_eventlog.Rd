@@ -4,12 +4,18 @@
 \alias{create_eventlog}
 \title{Create an eventlog object}
 \usage{
-create_eventlog(df, case_id = NULL, activity_id = NULL,
-  activity_instance_id = NULL, lifecycle_id = NULL, timestamp = NULL,
-  resource_id = NULL)
+create_eventlog(
+  df,
+  case_id = NULL,
+  activity_id = NULL,
+  activity_instance_id = NULL,
+  lifecycle_id = NULL,
+  timestamp = NULL,
+  resource_id = NULL
+)
 }
 \arguments{
-\item{df}{a \code{data.frame}. This contains the event data which is imported as a \code{data.frame}}
+\item{df}{a \code{data.frame} consisting of event log data}
 
 \item{case_id}{character vector of length 1. It contains column/attribute name which has unique cases in event data. (Mandatory)}
 
@@ -27,14 +33,12 @@ create_eventlog(df, case_id = NULL, activity_id = NULL,
 An \code{\link[bupaR]{eventlog}} created from the CSV file on the disk.
 }
 \description{
-Create an event log object from a CSV file on the disk.
+Create an event log object from \code{data.frame} on the disk.
 }
 \details{
-This function takes a CSV file as input and gives an eventlog object.
+This function takes a \code{data.frame} as input and gives an eventlog object.
 The function is only applicable for eventlog data. Eventlog data must contain
-Case, Activity and Timestamp attributes. For further process mining we must
-convert this event data which is in CSV format to a more suitable XES format
-which is an extension of XML format.
+Case, Activity and Timestamp attributes.
 }
 \examples{
 \dontrun{
@@ -50,4 +54,3 @@ log <- create_eventlog(artificial_loan_process,
 \seealso{
 \link[bupaR]{eventlog}, \link[fuzzymineR]{mine_fuzzy_model}, \link[fuzzymineR]{viz_fuzzy_model}
 }
-

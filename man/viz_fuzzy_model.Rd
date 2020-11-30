@@ -4,11 +4,18 @@
 \alias{viz_fuzzy_model}
 \title{Visualize Process Model}
 \usage{
-viz_fuzzy_model(metrics, node_sig_threshold = 0, edge_sig_threshold = 0.4,
-  edge_sig_to_corr_ratio = 0.75, preserve_threshold = 0.4,
-  offset_threshold = 0.1, node_sig_weights = c(freq = 1, routing = 1),
-  sig_weights = c(freq = 1, dist = 1), corr_weights = c(prox = 1, end_point
-  = 1, originator = 1, data_type = 1, data_value = 1))
+viz_fuzzy_model(
+  metrics,
+  node_sig_threshold = 0,
+  edge_sig_threshold = 0.4,
+  edge_sig_to_corr_ratio = 0.75,
+  preserve_threshold = 0.4,
+  offset_threshold = 0.1,
+  node_sig_weights = c(freq = 1, routing = 1),
+  sig_weights = c(freq = 1, dist = 1),
+  corr_weights = c(prox = 1, end_point = 1, originator = 1, data_type = 1, data_value =
+    1)
+)
 }
 \arguments{
 \item{metrics}{A list of metrics created by mine_fuzzy_model}
@@ -115,6 +122,7 @@ In this step, we mark the nodes whose \strong{aggregate node significance} is
 if possible and remove the isolated nodes from the process model. We preserve
 the ordering relation of the node that is removed by transitivity.
 }
+
 \examples{
 \dontrun{
 #' library(fuzzymineR)
@@ -134,4 +142,3 @@ viz_fuzzy_model(metrics = metrics,
 \seealso{
 \link[fuzzymineR]{create_eventlog}, \link[fuzzymineR]{mine_fuzzy_model}
 }
-

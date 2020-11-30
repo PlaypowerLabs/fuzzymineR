@@ -4,12 +4,14 @@
 \name{artificial_loan_process}
 \alias{artificial_loan_process}
 \title{Loan Process Event Dataset}
-\format{A data frame consisting of 590 events:
+\format{
+A data frame consisting of 590 events:
 \describe{
 \item{case}{Trace indentifier}
 \item{event}{Activity names}
 \item{completeTime}{Timestamp when the event was completed}
-}}
+}
+}
 \usage{
 artificial_loan_process
 }
@@ -18,4 +20,3 @@ An event dataset consisting the information for a loan process which consists of
 several cases who performs different sequence of activites at different times
 }
 \keyword{datasets}
-
