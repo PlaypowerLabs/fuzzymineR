@@ -10,13 +10,13 @@ Process Mining is a data mining technique that allows us to build process models
 
 ### About fuzzymineR ### 
 
-There are a few different tools available to do process modeling. Two of the most famous ones are [ProM](http://promtools.org) and [Disco](https://fluxicon.com/disco/). ProM is free and open source, and contains a plethora of process mining algorithms. We figured out that out of all of the available algorithms, Fuzzy Process Mining was probably the most useful process modeling algorithm when it came to mining real world data as this algorithm provided many different abstractions over the process. Fuzzy Process Mining algorithm was not available in R, so we built fuzzymineR to use the Fuzzy Process Mining algorithm available in ProM. We used ProM CLI interface to invoke the algorithm from R.
+There are a few different tools available to do process modeling. Two of the most famous ones are [ProM](http://promtools.org) and [Disco](https://fluxicon.com/disco/). ProM is free and open source, and contains a plethora of process mining algorithms. We figured out that out of all of the available algorithms, Fuzzy Process Mining was probably the most useful process modeling algorithm when it came to mining real world data as this algorithm provided many different abstractions over the process. Fuzzy Process Mining algorithm was not available in R, so we built fuzzymineR to use the Fuzzy Process Mining algorithm available in ProM. We used ProM 6.10 CLI interface to invoke the algorithm from R.
 
 In fuzzymineR, to build a process model from event log data, a user has to only provide a `data.frame` that contains an event log. fuzzymineR provides a way to create an object of class [bupaR::eventlog](https://rdrr.io/cran/bupaR/man/eventlog.html) and that object can be used to create a Fuzzy Process Model. Once the model is mined, you can configure the simplification level by setting the parameters and get the desired level of abstraction that you would like to work with. For process discovery, fuzzy mining algorithm is considered one of the best algorithms because it can deal with less-structered event data (which is typically the case with real world data) very well and saves you from creating **Spaghetti models**.
 
 ### System Requirments ###  
 
-Your system should have **Java 8** or higher version.
+Your system should have **Java 8**. We have not tested this package on other Java versions.
 
 ### Functions ###  
 
@@ -67,6 +67,6 @@ Pleae read the documentation or the research paper linked below for understandin
 
 ### Authors ###
 
-1. Tirth Shah (DA-IICT)
+1. Tirth Shah (Playpower Labs)
 2. Nirmal Patel (Playpower Labs)
 
