@@ -33,7 +33,7 @@ Your system should have **Java 8**. We have not tested this package on other Jav
 To install the package, use the following command:
 
 ```r
-devtools::install_github("nirmalpatel/fuzzymineR")
+devtools::install_github("PlaypowerLabs/fuzzymineR")
 ```
 
 ### Example ###  
