@@ -20,7 +20,7 @@ Our package carries ProM JAR files within it. Right now, we are using ProM 6.10 
 
 ### System Requirments ###  
 
-Your system should have **Java 8**. We have not tested this package on other Java versions.
+Your system should have **Java 8 or above**. We tested the package with Java 8 and Java 15. For Windows, please ensure that you are using a 64-bit version of Java. If you encounter any errors in the `mine_fuzzy_model` function, make sure you have `verbose = TRUE` so that you can see the problem.
 
 ### Functions ###  
 
