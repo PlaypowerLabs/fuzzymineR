@@ -36,6 +36,11 @@ To install the package, use the following command:
 devtools::install_github("PlaypowerLabs/fuzzymineR")
 ```
 
+If the installation gives you an error saying `sh: rm: command not found sh: mv: command not found` then please check if your ~/.Renviron file makes any modifications to the `$PATH` variable. If it does, please remove them and try the installation again. Here are two links that are related to this error:
+
+https://community.rstudio.com/t/sh-rm-command-not-found-sh-mv-command-not-found/42442
+https://thecoatlessprofessor.com/programming/cpp/r-compiler-tools-for-rcpp-on-macos/
+
 ### Example ###  
 
 After installing the package, please run the following example code:
@@ -53,7 +58,7 @@ log <- create_eventlog(artificial_loan_process,
                       timestamp = "completeTime")
                       
 # Mine the fuzzy model
-metrics <- mine_fuzzy_model(log)
+metrics <- mine_fuzzy_model(log, verbose = TRUE)
 
 # Visualize the fuzzy model for a given set of
 # parameters
